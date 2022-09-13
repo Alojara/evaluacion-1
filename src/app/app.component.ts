@@ -18,6 +18,6 @@ export class AppComponent {
   }
   public cambiarNombreSecc(evento:Event):void{
     const elemento = evento.target as HTMLInputElement;
-
+    this.seccion.nombreSeccion = elemento.value;
   }
 }

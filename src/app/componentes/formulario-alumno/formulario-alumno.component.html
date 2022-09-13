@@ -1,1 +1,52 @@
-<p>formulario-alumno works!</p>
+<section>
+  <fieldset>
+    <p>Ingrese rut de Alumno</p>
+    <input
+    type="number"
+    name="rutAlum"
+    [value]="alumno.rut"
+    (input)="cambiarRut($event)"
+    >
+  </fieldset>
+  <fieldset>
+    <label for="">Digito Verificador</label>
+    <select
+    name="dVerif"
+    [value]="alumno.dv"
+    (change)="cambiarDV($event)"
+    >
+      <option
+        *ngFor="let dv of digitosVerif"
+        [value]="digitosVerif"
+      >{{dv}}</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <p>Ingrese nombre de Alumno</p>
+    <input
+    type="text"
+    name="nomAlum"
+    [value]="alumno.nombre"
+    (input)="cambiarNombre($event)"
+    >
+  </fieldset>
+  <fieldset>
+    <p>Ingrese Apellido de Alumno</p>
+    <input
+    type="text"
+    name="apeAlum"
+    [value]="alumno.apellido"
+    (input)="cambiarApellido($event)"
+    >
+  </fieldset>
+  <fieldset>
+    <p>Ingrese edad de Alumno</p>
+    <input
+    type="number"
+    name="edadAlum"
+    [value]="alumno.edad"
+    (input)="cambiarEdad($event)"
+    >
+  </fieldset>
+
+</section>
