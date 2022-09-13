@@ -1,0 +1,9 @@
+<article>
+  <h2 *ngIf="alum.nombre; then aquiIf; else aquiElse" ></h2>
+  <ng-template #aquiIf>
+    <h2>{{ alum.nombre}}</h2>
+  </ng-template>
+  <ng-template #aquiElse>
+    <h2>Ocurrio un error</h2>
+  </ng-template>
+</article>
