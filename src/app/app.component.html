@@ -1,28 +1,5 @@
-<section>
-  <fieldset>
-    <input
-    type="number"
-    name="idSeccion"
-    [value]="seccion.idSeccion"
-    (input)="cambiarIdSecc($event)"
-    >
-  </fieldset>
-  <fieldset>
-    <input
-    type="text"
-    name="nombreSeccion"
-    [value]="seccion.nombreSeccion"
-    (input)="cambiarNombreSecc($event)"
-    >
-  </fieldset>
-  <fieldset>
-    <button
 
-    ></button>
-  </fieldset>
-</section>
 <!---->
+<app-formulario-seccion></app-formulario-seccion>
 <app-formulario-alumno></app-formulario-alumno>
-<fieldset>
-  <label for="">seccion: {{seccion.nombreSeccion}}{{seccion.idSeccion}}</label>
-</fieldset>
+
