@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import {Seccion} from './modelos/seccion';
+import { Component, Output,EventEmitter } from '@angular/core';
+import {Seccion} from './../../modelos/seccion';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-formulario-seccion',
+  templateUrl: './formulario-seccion.component.html',
+  styleUrls: ['./formulario-seccion.component.scss']
 })
-export class AppComponent {
-  title = 'evaluacion1';
+export class FormularioSeccionComponent {
+
   public seccion:Seccion ={
     idSeccion: 0,
     nombreSeccion:''
@@ -20,4 +20,6 @@ export class AppComponent {
     const elemento = evento.target as HTMLInputElement;
 
   }
+
+
 }
